@@ -1,9 +1,4 @@
-//
-//  Package.swift
-//  FeatureModule
-//
-//  Created by Malik Timurkaev on 04.10.2025.
-//
+// swift-tools-version:6.0
 
 import PackageDescription
 
@@ -19,7 +14,9 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FeatureModule"
+            name: "FeatureModule",
+            path: "FeatureModule",
+            sources: ["Sources"]
         )
     ]
 )
