@@ -18,7 +18,7 @@ public enum Targets {
                 applicationSceneManifest: .dictionary(defaultSceneManifest),
                 launchStoryboardName: .string("LaunchScreen")
             ]),
-        sources: [Source.appSources],
+        sources: [Source.appSources, Source.appLifecycle],
         resources: [Resource.appResources],
         dependencies: [/*.external(name: SPMDependency.coreKit.name)*/],
         settings: .settings(base: BuildFlags.base),
