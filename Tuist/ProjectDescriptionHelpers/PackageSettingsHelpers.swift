@@ -7,7 +7,6 @@
 
 import ProjectDescription
 
-
 public func resolvedFramework() -> ProjectDescription.Product {
     if case let .string(v) = Environment.productType {
         switch v.lowercased() {

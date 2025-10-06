@@ -20,9 +20,7 @@ public enum Targets {
             ]),
         sources: [Source.appSources],
         resources: [Resource.appResources],
-        dependencies: [
-            
-        ],
+        dependencies: [/*.external(name: SPMDependency.coreKit.name)*/],
         settings: .settings(base: BuildFlags.base),
     )
 }
@@ -32,6 +30,7 @@ fileprivate enum Source {
     typealias SourceLiteral = SourceFilesList.ArrayLiteralElement
     
     static let appSources: SourceLiteral = "\(ProjectConstants.appName)/Sources/**"
+    static let appLifecycle: SourceLiteral = "\(ProjectConstants.appName)/AppLifecycle/**"
 }
 
 fileprivate enum Resource {

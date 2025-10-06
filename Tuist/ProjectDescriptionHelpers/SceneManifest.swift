@@ -5,9 +5,7 @@
 //  Created by Malik Timurkaev on 23.09.2025.
 //
 
-
 import ProjectDescription
-
 
 public let defaultSceneManifest: [String: Plist.Value] = [
     appSupportsMultipleScenes: .boolean(false),

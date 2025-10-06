@@ -7,9 +7,12 @@
 
 import ProjectDescription
 
-
 public enum SPMDependency {
-    
+//    static let coreKit = PackageModel(
+//        name: "CoreKit",
+//        url: "https://github.com/TimurkaevMalik/CoreKit.git",
+//        requirement: .version(.init(2, 0, 0))
+//    )
 }
 
 public struct PackageModel: Sendable {
